@@ -1,48 +1,52 @@
-import { Link } from "react-router-dom";
-
 const Footer = () => {
   return (
     <>
       {/* Newsletter */}
-      {/* <div className="flex flex-col lg:flex-row justify-center items-start py-10 px-5  bg-white shadow-[0_0px_0px_4px_rgb(0, 0, 0, 0.3)] rounded-[20px]">
-          <h2 className="text-[40px] md:text-[54px] leading-[53px] text-[#767E86]">
-            Our Newsletter
-          </h2>
-          <div className="flex flex-col justify-start text-[20px] leading-6 mb-10">
-            <div className="flex flex-col md:flex-row gap-8 lg:flex-row md:justify-center md:items-start">
-              <span className=" text-[#767E86] pb-4">Email</span>
-              <input
-                className="bg-[#FFE8D4] w-full py-6 text-[#FF7757] rounded-xl"
-                type="text"
-                placeholder="Enter your email"
-              />
-            </div>
-            <button className="py-6 px-[35px] bg-[#FF7757] rounded-xl text-white">
-              Subscribe
-            </button>
-          </div>
-        </div> */}
       <div className="max-w-screen-xl mx-auto relative lg:top-[100px]">
+        <div className=" mx-4 md:mx-[18px] lg:mx-9 xl:mx-[89px] py-10 lg:py-[60px]  md:px-10 px-5 bg-white shadow-[0_0px_0px_4px_rgb(0, 0, 0, 0.3)] border rounded-[20px] md:rounded-[26px]">
+          <div className="flex flex-col lg:flex-row lg:items-center xl:items-start gap-[60px]">
+            <h2 className="text-[40px] md:text-[54px] leading-[53px] text-[#767E86]">
+              Our Newsletter
+            </h2>
+            <div className="flex flex-col md:justify-between gap-8 text-[20px] leading-6">
+              <label className="text-[#767E86] block">Email</label>
+              <div className="flex flex-col md:flex-row md:justify-between gap-8">
+                <input
+                  className="block py-6 w-full placeholder-[#FF7757] text-center rounded-xl bg-[#FFE8D4]"
+                  type="text"
+                  placeholder="Enter your email"
+                />
+                <button className="py-6 px-[35px] bg-[#FF7757] rounded-xl text-white">
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Container */}
+      {/* <div className="max-w-screen-xl mx-auto relative lg:top-[100px]">
         <div className="flex flex-col lg:flex-row lg:items-center xl:items-start mx-4 md:mx-[18px] lg:mx-9 xl:mx-[89px] py-10 lg:py-[60px] gap-[60px] md:px-10 px-5 bg-white shadow-[0_0px_0px_4px_rgb(0, 0, 0, 0.3)] border rounded-[20px] md:rounded-[26px]">
           <h2 className="text-[40px] md:text-[54px] leading-[53px] text-[#767E86]">
             Our Newsletter
           </h2>
-          <div className="flex flex-col md:items-end md:flex-row justify-between gap-8 ">
+          <div className="flex flex-col md:items-end md:flex-row md:justify-between gap-8 ">
             <div className="flex flex-col gap-4 text-[20px] leading-6">
-              <label className="text-[#767E86]">Email</label>
+              <label className="text-[#767E86] block">Email</label>
               <input
                 className="block py-6 w-full placeholder-[#FF7757] text-center rounded-xl bg-[#FFE8D4]"
                 type="text"
                 placeholder="Enter your email"
               />
             </div>
-            {/* Button */}
+            
             <button className="py-6 px-[35px] bg-[#FF7757] rounded-xl text-white">
               Subscribe
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
+
       {/* Container */}
       <footer className="bg-[#172432]">
         <div className="max-w-screen-xl mx-auto">
