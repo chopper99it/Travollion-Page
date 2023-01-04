@@ -15,9 +15,9 @@ const Banner = () => {
             </p>
           </div>
           {/* Book now */}
-          <div className="sm:w-5/6 flex flex-col sm:flex-row">
+          <div className="sm:w-5/6 flex flex-col sm:flex-row sm:-ml-4 lg:-ml-[72px] xl:-ml-[135px]">
             {/* Grid */}
-            <div className="flex-grow bg-white py-[74px] rounded-t-lg  sm:rounded-t-none  sm:rounded-tl-md sm:rounded-bl-md">
+            <div className="flex-grow bg-white py-[74px] rounded-t-lg  sm:rounded-t-none  sm:rounded-tl-none sm:rounded-bl-none">
               <div className="grid grid-cols-1 sm:grid-cols-2  gap-6 px-4 md:grid-cols-4 items-center">
                 <div className="">
                   <h4 className="pb-2">DESTINATION</h4>
