@@ -1,5 +1,4 @@
-import Navbar from "./components/Navbar";
-import Banner from "./components/Banner";
+import Header from "./components/Header";
 import PopularDestination from "./components/PopularDestination";
 import SpecialOffer from "./components/SpecialOffer";
 import OurBlog from "./components/OurBlog";
@@ -11,15 +10,14 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
     <>
-      <Navbar />
-      <Banner />
+      <Header />
       <PopularDestination />
-      <SpecialOffer />
+      {/* <SpecialOffer />
       <OurBlog />
       <TripPlanners />
       <Gallery />
       <Experiences />
-      <Footer />
+      <Footer /> */}
     </>
   );
 };
