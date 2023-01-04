@@ -86,7 +86,7 @@ const TripPlanner = ({ imageUrl, text, price }) => {
         src={imageUrl}
         alt={text}
       />
-      <div className="max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all">
+      <div className="xl:max-h-0 xl:overflow-hidden xl:group-hover:max-h-[200px] transition-all">
         <h5 className="flex justify-between md:text-2xl mt-3 xl:text-sm 2xl:text-lg">
           GUIDED TOUR <span>€{price}/Day</span>
         </h5>
@@ -124,7 +124,7 @@ const TripPlanners = () => {
             </div>
           </div>
           {/* Pictures */}
-          <div className=" xl:flex items-center gap-8 my-40 min-h-[550px] basis-2/3">
+          <div className="flex flex-col xl:flex-row xl:items-center gap-8 my-40 sm:min-h-[550px] basis-2/3">
             <TripPlanner
               imageUrl="https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=796&q=80"
               text="Rome City Tour"
