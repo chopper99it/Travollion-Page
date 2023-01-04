@@ -24,7 +24,7 @@ const SpecialOffer = () => {
       {/* Container */}
       <div className="max-w-screen-xl mx-auto p-4 sm:px-6 sm:py-12 lg:px-14">
         {/* Layout */}
-        <div className="flex justify-between flex-row-reverse relative">
+        <div className="flex justify-between items-end flex-row-reverse relative">
           <div className="sm:px-4">
             {/* Title */}
             <h1 className="font-serif font-normal text-5xl">Special Offer</h1>
@@ -32,6 +32,44 @@ const SpecialOffer = () => {
             <p className="text-sm text-gray-400">
               Check out our offer and discounts
             </p>
+          </div>
+          {/* L&R Buttons */}
+          <div className="hidden sm:block sm:px-4">
+            <div className="flex gap-4 justify-center ">
+              {/* Left right buttons */}
+              <button className="bg-black rounded-md text-white p-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 19.5L8.25 12l7.5-7.5"
+                  />
+                </svg>
+              </button>
+              <button className="bg-orange-600 rounded-md text-white p-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
 
@@ -176,8 +214,8 @@ const SpecialOffer = () => {
             </div>
 
             {/* L&R Buttons */}
-            <div className="">
-              <div className="flex gap-4 items-end justify-center  sm:absolute top-[125px] left-12 ">
+            <div className="block sm:hidden">
+              <div className="flex gap-4 items-end justify-center">
                 {/* Left right buttons */}
                 <button className="bg-black rounded-md text-white p-2">
                   <svg
