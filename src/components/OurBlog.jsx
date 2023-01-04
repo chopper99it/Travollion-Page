@@ -6,7 +6,7 @@ const OurBlog = () => {
         {/* Layout */}
         <div className="pb-4">
           {/* Title */}
-          <h1 className="font-serif font-normal text-4xl mb-4">Our Blog</h1>
+          <h1 className="font-serif font-normal text-5xl mb-4">Our Blog</h1>
           <hr className="w-[150px] mb-4 border-2 solid bg-orange-400 border-orange-400" />
           <p className="text-sm text-gray-500">
             An insight the incredible experience in the world
@@ -25,7 +25,7 @@ const OurBlog = () => {
           <div className="pt-2 sm:pt-6">
             {/* Content */}
             <div className="pb-4 sm:pt-8">
-              <h3 className="text-4xl font-serif pb-4">
+              <h3 className="leading-10 text-4xl font-serif pb-4">
                 Beautiful Italy
                 <br />
                 Let's travel
