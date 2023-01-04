@@ -2,21 +2,21 @@ const Footer = () => {
   return (
     <>
       {/* Newsletter */}
-      <div className="max-w-screen-xl mx-auto relative lg:top-[100px]">
+      <div className="max-w-screen-xl mx-auto relative lg:top-[125px]">
         <div className=" mx-4 md:mx-[18px] lg:mx-9 xl:mx-[89px] py-10 lg:py-[60px]  md:px-10 px-5 bg-white shadow-[0_0px_0px_4px_rgb(0, 0, 0, 0.3)] border rounded-[20px] md:rounded-[26px]">
           <div className="flex flex-col lg:flex-row lg:items-center xl:items-start gap-[60px]">
             <h2 className="text-[40px] md:text-[54px] leading-[53px] text-[#767E86]">
               Our Newsletter
             </h2>
-            <div className="flex flex-col md:justify-between gap-8 text-[20px] leading-6">
+            <div className="flex flex-col lg:flex-grow md:justify-between gap-8 text-[20px] leading-6">
               <label className="text-[#767E86] block">Email</label>
               <div className="flex flex-col md:flex-row md:justify-between gap-8">
                 <input
-                  className="block py-6 w-full placeholder-[#FF7757] text-center rounded-xl bg-[#FFE8D4]"
+                  className="block text-center md:text-left py-6 w-full placeholder-[#FF7757] md:pl-10 rounded-xl bg-[#FFE8D4]"
                   type="text"
                   placeholder="Enter your email"
                 />
-                <button className="py-6 px-[35px] bg-[#FF7757] rounded-xl text-white">
+                <button className="py-6 px-[35px]  bg-[#FF7757] rounded-xl text-white">
                   Subscribe
                 </button>
               </div>
@@ -30,8 +30,8 @@ const Footer = () => {
           <h2 className="text-[40px] md:text-[54px] leading-[53px] text-[#767E86]">
             Our Newsletter
           </h2>
-          <div className="flex flex-col md:items-end md:flex-row md:justify-between gap-8 ">
-            <div className="flex flex-col gap-4 text-[20px] leading-6">
+          <div className="flex flex-col lg:flex-grow md:items-end md:flex-row md:justify-between gap-8 ">
+            <div className="flex flex-grow flex-col gap-4 text-[20px] leading-6">
               <label className="text-[#767E86] block">Email</label>
               <input
                 className="block py-6 w-full placeholder-[#FF7757] text-center rounded-xl bg-[#FFE8D4]"
@@ -39,7 +39,7 @@ const Footer = () => {
                 placeholder="Enter your email"
               />
             </div>
-            
+
             <button className="py-6 px-[35px] bg-[#FF7757] rounded-xl text-white">
               Subscribe
             </button>
