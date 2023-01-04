@@ -78,14 +78,33 @@ const Star = () => {
   );
 };
 
+const TripPlanner = ({ imageUrl, text, price }) => {
+  return (
+    <div className="group">
+      <img
+        className="rounded-3xl aspect-square w-full md:h-96 object-cover  "
+        src={imageUrl}
+        alt={text}
+      />
+      <div className="max-h-0 overflow-hidden group-hover:max-h-[200px] transition-all">
+        <h5 className="flex justify-between md:text-2xl mt-3 xl:text-sm 2xl:text-lg">
+          GUIDED TOUR <span>€{price}/Day</span>
+        </h5>
+        <h4 className="font-semibold text-2xl mt-2">{text}</h4>
+        <Star />
+      </div>
+    </div>
+  );
+};
+
 const TripPlanners = () => {
   return (
     <section>
       {/* Container */}
-      <div className="max-w-screen-lg mx-auto px-2">
+      <div className="max-w-[1620px] mx-auto px-8">
         {/* Layout */}
-        <div className="grid xl:grid-cols-3 gap-2">
-          <div className="md:flex md:flex-col my-auto">
+        <div className="xl:flex items-center gap-2">
+          <div className="md:flex md:flex-col my-auto basis-1/3">
             <h2 className="font-normal text-4xl md:text-5xl 2xl:text-6xl">
               Trip Planners
             </h2>
@@ -105,79 +124,30 @@ const TripPlanners = () => {
             </div>
           </div>
           {/* Pictures */}
-          <div className="my-20 xl:grid xl:col-span-2">
-            <div className=" xl:flex xl:gap-2 items-center">
-              <div className="">
-                <img
-                  className="rounded-3xl aspect-square w-full md:h-96 object-cover"
-                  src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=796&q=80"
-                  alt="Rome"
-                />
-                <div className="xl:hidden">
-                  <h5 className="flex justify-between mt-3 md:text-2xl">
-                    GUIDED TOUR <span>€99/Day</span>
-                  </h5>
-                  <h4 className="font-semibold text-2xl mt-2 md:text-3xl">
-                    Rome City Tour
-                  </h4>
+          <div className=" xl:flex items-center gap-8 my-40 min-h-[550px] basis-2/3">
+            <TripPlanner
+              imageUrl="https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=796&q=80"
+              text="Rome City Tour"
+              price="99"
+            />
 
-                  <Star />
-                </div>
-              </div>
-              <div className="">
-                <img
-                  className="rounded-3xl w-full aspect-square md:h-96 object-cover "
-                  src="https://images.unsplash.com/photo-1549144511-f099e773c147?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-                  alt="Effeil"
-                />
-                <div>
-                  <h5 className="flex justify-between md:text-2xl mt-3 xl:text-sm 2xl:text-lg">
-                    GUIDED TOUR <span>€95/Day</span>
-                  </h5>
-                  <h4 className="font-semibold text-2xl mt-2 ">
-                    Paris City Tour
-                  </h4>
+            <TripPlanner
+              imageUrl="https://images.unsplash.com/photo-1549144511-f099e773c147?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+              text=" Paris City Tour"
+              price="95"
+            />
 
-                  <Star />
-                </div>
-              </div>
-              <div className="">
-                <img
-                  className="rounded-3xl w-full aspect-square md:h-96 object-cover "
-                  src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                  alt="Madrid"
-                />
+            <TripPlanner
+              imageUrl="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              text="Barcelona City Tour"
+              price="89"
+            />
 
-                <div className="xl:hidden">
-                  <h5 className="flex justify-between md:text-2xl mt-3">
-                    GUIDED TOUR <span>€89/Day</span>
-                  </h5>
-                  <h4 className="font-semibold text-2xl mt-2 md:text-3xl">
-                    Barcelona City Tour
-                  </h4>
-
-                  <Star />
-                </div>
-              </div>
-              <div className="">
-                <img
-                  className="rounded-3xl w-full aspect-square md:h-96 object-cover"
-                  src="https://images.unsplash.com/photo-1549877452-9c387954fbc2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                  alt="Budapest"
-                />
-
-                <div className="xl:hidden">
-                  <h5 className="flex justify-between md:text-2xl mt-3">
-                    GUIDED TOUR <span>€89/Day</span>
-                  </h5>
-                  <h4 className="font-semibold text-2xl mt-2 md:text-3xl">
-                    Budapest City Tour
-                  </h4>
-
-                  <Star />
-                </div>
-              </div>
-            </div>
+            <TripPlanner
+              imageUrl="https://images.unsplash.com/photo-1549877452-9c387954fbc2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              text="Budapest City Tour"
+              price="89"
+            />
           </div>
         </div>
       </div>

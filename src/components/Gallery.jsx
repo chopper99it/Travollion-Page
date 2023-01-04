@@ -2,7 +2,7 @@ const Gallery = () => {
   return (
     <section>
       {/* Container */}
-      <div className="max-w-screen-lg mx-auto px-4">
+      <div className="max-w-[1620px] mx-auto px-8">
         {/* Layout */}
         <div className="lg:relative">
           <div>
@@ -17,22 +17,22 @@ const Gallery = () => {
           {/* Images */}
           <div className="grid gap-6 lg:grid-cols-4 py-10">
             <img
-              className="rounded-3xl aspect-square w-full md:h-96 object-cover lg:mt-8"
+              className="rounded-3xl aspect-square w-full md:h-96 object-cover hover:-translate-y-6 transition-all"
               src="https://imaaya.b-cdn.net/wp-content/uploads/elementor/thumbs/toa-heftiba-0rlfiRSdVzU-unsplash-scaled-px3yl50lasxj8ppuetc6h548fa1b76rajgi11h5204.jpg"
               alt=""
             />
             <img
-              className="rounded-3xl aspect-square w-full md:h-96 object-cover"
+              className="rounded-3xl aspect-square w-full md:h-96 object-cover hover:-translate-y-6  transition-all"
               src="https://images.unsplash.com/photo-1497184380246-bde200db36c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
               alt=""
             />
             <img
-              className="rounded-3xl aspect-square w-full md:h-96 object-cover lg:mt-8"
+              className="rounded-3xl aspect-square w-full md:h-96 object-cover hover:-translate-y-6  transition-all"
               src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
               alt=""
             />
             <img
-              className="rounded-3xl aspect-square w-full md:h-96 object-cover lg:mt-8"
+              className="rounded-3xl aspect-square w-full md:h-96 object-cover hover:-translate-y-6  transition-all"
               src="https://images.unsplash.com/photo-1528478246253-b119d2406290?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80"
               alt=""
             />
