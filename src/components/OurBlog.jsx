@@ -25,8 +25,11 @@ const OurBlog = () => {
           <div className="pt-2 sm:pt-6">
             {/* Content */}
             <div className="pb-4 sm:pt-8">
-              <h3 className="text-4xl font-serif pb-4">Beautiful Italy</h3>
-              <h3 className="text-4xl font-serif">Let's travel</h3>
+              <h3 className="text-4xl font-serif pb-4">
+                Beautiful Italy
+                <br />
+                Let's travel
+              </h3>
             </div>
             <p className="leading-8 text-base">
               But I must explain to you how all this mistaken idea of denouncing
