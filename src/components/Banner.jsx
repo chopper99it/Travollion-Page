@@ -56,7 +56,7 @@ const Banner = () => {
 
             {/* Button */}
             <button className="bg-orange-400 p-5 text-white rounded-b-lg sm:rounded-b-none sm:rounded-r-lg sm:px-5">
-              Book Now
+              Book Now +
             </button>
           </div>
         </div>
